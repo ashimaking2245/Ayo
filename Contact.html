@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="Sub-header">
+        <nav>
+            <a href="index.html"><img src="image/logo.jpg" width="20px" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Me</h1>
+    </section>
+
+    <!---------contact Me------------>
+    <section class="Location">
+        <img src="image/map.jpg" alt="">
+
+    </section>
+    <section class="contact-me">
+        <div class="contact-col">
+            <div>
+               <i class="fa fa-home"></i>
+               <span>
+                <h5>XYZ Road, ABC Building</h5>
+                <p>Bwari, Dutsen , IN</p>
+               </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+234 8146895621</h5>
+                    <p>Monday to saturday,10AM to 6PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>igomahk@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <form action="form- handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter Email address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea row="8" name="Message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+    </section>
+
+ 
+    
+    <!---------- Footer------->
+    <section class="footer">
+        <h4>About Me</h4>
+        <p>I an an artist who is into different kind of artworks
+            i am hail from cross River State. it will be beautiful if you visit my studio in Abuja
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-------JavaScript for Toggle Menu----->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>

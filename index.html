@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/logo.jpg" width="20px" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>DE KING ART STUDIO</h1>
+            <p>welcome to de king art studio where beautiful<br> artworks are avilable for the decoration of your aprtment</p>
+             <a href="Gallery.html" class="hero-btn">visit My Gallery</a>
+        </div>
+
+    </section>
+
+    <!--------course-------->
+    <section class="course">
+        <h1>Categories of Art</h1>
+        <p>Art comprises of different branches .and the are different kind of art</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>black & white Art</h3>
+                <p>This is known as pencil artwork the use of different pencils to archiev your aims</p>
+            </div>
+            <div class="course-col">
+                <h3>Painting Art</h3>
+                <p>This involve the use of different colors to create something unique</p>
+            </div>
+            <div class="course-col">
+                <h3>Fabric Art</h3>
+                <p>This involve designing on any kind of clothes ..... </p>
+            </div>
+
+        </div>
+
+    </section>
+    <!------------studio----->
+    <section class="studio">
+        <h1>My Mini Studio</h1>
+        <p>My Mini Studio Comprises Of Beautiful Artworks Which Are Affortable</p>
+
+        <div class="row">
+            <div class="studio-col">
+                <img src="image/active.jpg" alt="">
+                <div class="layer">
+                    <h3>DUTSEN</h3>
+                </div>
+            </div>
+            <div class="studio-col">
+                <img src="image/studio.jpg" alt="">
+                <div class="layer">
+                    <h3>BWARI</h3>
+                </div>
+            </div>
+            <div class="studio-col">
+                <img src="image/my profil.jpg" alt="">
+                <div class="layer">
+                    <h3>KUBWA</h3>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!------------ testimonials------>
+    <section class="testimonials">
+        <h1>What My Clients says</h1>
+        <p>i feel aweful after all the accolades from my reputable clients</p>
+
+        <div class="row">
+            <div class="testimonials">
+                <div class="testimonial-col">
+                <img src="image/Sir  Dr Max .jpg" alt="">
+                <p>Obtaining artworks from De King Art studio is worth it. i urge those who wants to beautify their homes should visit this studio</p>
+                <h3>Sir Dr Max</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+        </div>
+        </div>
+            <div class="testimonial">
+                <div class="testimonial-col">
+                <img src="image/Miss Goodness.jpg" alt="">
+                <p>Obtaining artworks from De King Art studio is worth it. i urge those who wants to beautify their homes should visit this studio</p>
+                <h3>Miss Goodness</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+            </div>
+        </div>
+            <div class="testimonial">
+                <div class="testimonial-col">
+                <img src="image/miss Alex.jpg" alt="">
+                <p>Obtaining artworks from De King Art studio is worth it. i urge those who wants to beautify their homes should visit this studio</p>
+                <h3>Miss Alex</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <p>Made with </p>
+
+    </section>
+
+    <!--------- Call To Action ------->
+    
+    <section class="cta">
+        <h1>Vsit De King Art Studio<br>
+             Anywhere In Nigeria</h1>
+        <a href="" class="hero-btn">CONTACT ME</a>
+
+    </section>
+
+    <!---------- Footer------->
+    <section class="footer">
+        <h4>About Me</h4>
+        <p>I an an artist who is into different kind of artworks
+            i am hail from cross River State. it will be beautiful if you visit my studio in Abuja
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-------JavaScript for Toggle Menu----->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="DG-header">
+        <nav>
+            <a href="index.html"><img src="image/logo.jpg" width="20px" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>GALLERY</h1>
+
+    </section>
+  <!------------------gallery-->
+    <section class="gallery">
+        <h1>MY GALLERY</h1>
+        <p>My Mini Studio Comprises Of Beautiful Artworks Which Are Affortable</p>
+
+        <div class="row">
+            <div class="studio-col">
+                <img src="image/album.jpg" alt="">
+                <div class="layer">
+                    <h3>DUTSEN</h3>
+                </div>
+            </div>
+
+
+    </section>
+
+
+
+
+    
+    
+    <!---------- Footer------->
+    <section class="footer">
+        <h4>About Me</h4>
+        <p>I an an artist who is into different kind of artworks
+            i am hail from cross River State. it will be beautiful if you visit my studio in Abuja
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-------JavaScript for Toggle Menu----->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
